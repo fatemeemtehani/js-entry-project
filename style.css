@@ -42,7 +42,7 @@
   direction: rtl;
 }
 .header-right input::placeholder {
-    color: white;
+  color: white;
 }
 .header-left {
   margin: 50px;
@@ -88,8 +88,6 @@
 .row:last-child {
   border-bottom: none; /* حذف خط پایانی */
 }
-
-
 
 .weather-icon {
   text-align: center;
@@ -138,52 +136,52 @@
   .header-right,
   .header-right input {
     width: 90%;
-    margin: 10px 0; /* حاشیه عمودی */
+    margin: 10px 0;
   }
 
   .main {
-    padding-bottom: 50px; /* کاهش حاشیه پایین */
+    padding-bottom: 50px;
   }
 
   .vasat {
-    flex-direction: column; /* چینش عمودی */
-    align-items: center; /* مرکز چینش */
+    flex-direction: column;
+    align-items: center;
   }
 
   .left {
-    width: 100%; /* عرض کامل برای بخش چپ */
-    margin-bottom: 20px; /* فاصله بین بخش‌ها */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .right {
-    width: 100%; /* عرض کامل برای بخش راست */
+    width: 100%;
     display: flex;
-    flex-direction: column; /* چینش عمودی */
-    align-items: center; /* مرکز چینش */
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20vh;
   }
 
   .right1 img {
-    width: 80%; /* کاهش اندازه تصویر */
-    height: auto; /* حفظ نسبت ابعاد */
+    width: 80%;
+    height: auto;
   }
 
   .right2 h1 {
-    font-size: 36px; /* اندازه بزرگتر برای دما */
+    font-size: 36px;
   }
 
   .right2 h3 {
-    font-size: 18px; /* اندازه کوچک‌تر برای حداکثر و حداقل دما */
+    font-size: 18px;
   }
 
   .row {
     white-space: nowrap;
-    flex-direction: row; /* چینش عمودی برای روزها */
-    align-items: center; /* مرکز چینش */
+    flex-direction: row;
+    align-items: center;
     gap: 50px;
   }
 
   .weather-icon {
-    font-size: 30px; /* اندازه کوچکتر برای آیکون‌ها */
+    font-size: 30px;
   }
 }
