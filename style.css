@@ -1,0 +1,189 @@
+.body {
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #124bb4;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 20px;
+  color: #ddd;
+}
+.row {
+  color: #ddd;
+  direction: rtl;
+}
+.row img {
+  width: 40px;
+  height: 40px;
+}
+.header-right input {
+  width: 418px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #124bb4;
+  margin: 50px;
+  margin-top: 80px;
+  color: white;
+  font-size: 20px;
+  direction: rtl;
+}
+.header-right input::placeholder {
+    color: white;
+}
+.header-left {
+  margin: 50px;
+  margin-top: 80px;
+  font-family: Vazirmatn;
+  font-weight: 200;
+  font-size: 20px;
+  color: #ddd;
+}
+.vasat {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 60%;
+  height: auto;
+  background-color: #0d3b89;
+  direction: rtl;
+  border-radius: 20px;
+}
+
+.calendar {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff1a;
+  padding: 10px 0;
+}
+
+.row:last-child {
+  border-bottom: none; /* حذف خط پایانی */
+}
+
+
+
+.weather-icon {
+  text-align: center;
+}
+
+.temp {
+  text-align: right;
+}
+
+/* ...............................
+ */
+.right {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  margin-right: 40px;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  line-height: 2;
+}
+.right2 p {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-right,
+  .header-right input {
+    width: 90%;
+    margin: 10px 0; /* حاشیه عمودی */
+  }
+
+  .main {
+    padding-bottom: 50px; /* کاهش حاشیه پایین */
+  }
+
+  .vasat {
+    flex-direction: column; /* چینش عمودی */
+    align-items: center; /* مرکز چینش */
+  }
+
+  .left {
+    width: 100%; /* عرض کامل برای بخش چپ */
+    margin-bottom: 20px; /* فاصله بین بخش‌ها */
+  }
+
+  .right {
+    width: 100%; /* عرض کامل برای بخش راست */
+    display: flex;
+    flex-direction: column; /* چینش عمودی */
+    align-items: center; /* مرکز چینش */
+    margin-bottom: 20vh;
+  }
+
+  .right1 img {
+    width: 80%; /* کاهش اندازه تصویر */
+    height: auto; /* حفظ نسبت ابعاد */
+  }
+
+  .right2 h1 {
+    font-size: 36px; /* اندازه بزرگتر برای دما */
+  }
+
+  .right2 h3 {
+    font-size: 18px; /* اندازه کوچک‌تر برای حداکثر و حداقل دما */
+  }
+
+  .row {
+    white-space: nowrap;
+    flex-direction: row; /* چینش عمودی برای روزها */
+    align-items: center; /* مرکز چینش */
+    gap: 50px;
+  }
+
+  .weather-icon {
+    font-size: 30px; /* اندازه کوچکتر برای آیکون‌ها */
+  }
+}
